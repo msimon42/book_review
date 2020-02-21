@@ -1,0 +1,13 @@
+<h1>Book Info</h1>
+  <p>Title: <%= @book_info[:title] %></p>
+  <p>Author: <%= @book_info[:author] %></p>
+  <p>Genre: <%= @book_info[':genre] %></p>
+
+<p>Review count: <%= @review_info[:review_count] %></p>
+
+<h3>Reviews</h3>
+  <ul>
+  <% @review_info[:reviews].each do |review| %>
+      <li><%= review %></li>
+  <% end %>
+  </ul>
